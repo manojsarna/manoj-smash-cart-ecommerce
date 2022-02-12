@@ -22,50 +22,6 @@ body {
     margin: auto;
 }
 
-/* HEADER STARTS */
-
-.sm-header {
-
-    display: flex;
-    grid-area: header;
-    padding: 0 3rem;
-    border-bottom: 2px solid var(--COLOR-HEADER-FONT-DARK);
-    position: sticky;
-    z-index: 2;
-    width: 100%;
-    top: 0;
-    background: var(--COLOR-BG);
-}
-
-
-
-#sc-login {
-
-    white-space: nowrap;
-
-}
-
-#sc-logo {
-    white-space: nowrap;
-    display: inline-block;
-}
-
-.btn-social {
-    outline: none;
-    border: none;
-    background: none;
-    color: var(--COLOR-HEADER-FONT-DARK);
-    cursor: pointer;
-    font-size: 2.5rem;
-    transition: all ease-in 0.5s;
-}
-
-.btn-social:hover {
-    color: var(--COLOR-HEADER-FONT-DARK-HOVER);
-}
-
-/* HEADER ENDS */
-
 /* MAIN STARTS */
 
 .sm-main {
@@ -132,7 +88,10 @@ body {
     font-size: 2.3rem;
     width: 20rem;
     font-weight: 500;
+}
 
+#carousel-btn:hover {
+    opacity: 1;
 }
 
 .color-p {
@@ -231,21 +190,10 @@ body {
 }
 
 .sm-main-prod-container .sm-card .sm-card-img {
+    border-radius: 5px;
     background: var(--COLOR-WHITE-ALWAYS);
     padding: 4rem;
 }
 
 /* MAIN ENDS */
 
-.sm-footer {
-    grid-area: footer;
-    display: grid;
-    border-top: 2px solid var(--COLOR-HEADER-FONT-DARK);
-    place-content: center;
-    transition: color ease-in 0.2s;
-}
-
-
-
-
-/* MEDIA QUERIES */

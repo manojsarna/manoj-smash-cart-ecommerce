@@ -1,0 +1,125 @@
+@import "/lib/Components/core.css";
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    min-width: 100vh;
+    font-size:1.6rem;
+    font-weight: 500;
+    color:var(--COLOR-FONT);
+    background: var(--COLOR-BG);    
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 7rem 1fr 7rem;
+    margin:auto;
+}
+
+/* MAIN STARTS */
+.sm-main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    min-width: 100vh;
+    padding: 2rem 0;
+    height: 100%;
+}
+ 
+
+.sm-main-filter-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    padding: 0 2rem;
+    width: 20rem;
+    border-right: 1px solid var(--COLOR-PRIMARY);
+    overflow-y:scroll;
+}
+
+.filter-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.btn-link-txt{
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-weight: 500;
+        color: var(--COLOR-HEADER-FONT-DARK);
+}
+.btn-link-txt:hover{
+    color: var(--COLOR-DARKEN-HOVER-1);
+}
+
+.filter-list-container{
+    list-style: none;
+    padding: 1.5rem 0;
+    margin: 0;
+    border-top: 1px solid var(--COLOR-PRIMARY);
+}
+
+.filter-list-header{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.filter-list-container li{
+    padding-bottom: 5px;
+} 
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-slider{
+    /* need to customize rating css */
+    /* appearance: none; */
+    /* color: var(--COLOR-PRIMARY);
+    background: var(--COLOR-LIGHTEN-4); */
+    width: 15.5rem;
+    border-radius: 8px;
+    height: 8px;
+}
+.rating-slider-label{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+
+.sm-main-prod-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    width: 100%;
+    padding:1rem 2rem;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.sm-main-prod-container .sm-card .sm-card-img {
+    border-radius: 5px;
+    background: var(--COLOR-WHITE-ALWAYS);
+    padding: 4rem;
+}
+/* MAIN ENDS */
+
+
