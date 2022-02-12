@@ -1,0 +1,9 @@
+/* FOR CARDS */
+
+.sm-card .sm-card-content .sm-card-info .cart-btn{
+    white-space: nowrap;
+}
+
+.sm-card{
+    width: 25rem;
+}
