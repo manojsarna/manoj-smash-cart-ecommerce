@@ -16,6 +16,17 @@
 #sc-login{
     white-space: nowrap;
 }
+
+#sc-logo {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#btn-dm{
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+}
+
 .btn-social{
     outline: none;
     border:none;
@@ -28,4 +39,18 @@
 .btn-social:hover{
     color: var(--COLOR-HEADER-FONT-DARK-HOVER);
 }
+.color-dm {
+    color: var(--COLOR-HEADER-FONT-DARK);
+}
+
+.sm-action-icon-btn-wrapper .sm-icon-btn-primary:hover {
+    color: var(--COLOR-HEADER-FONT-DARK-HOVER);
+}
 /* HEADER ENDS */
+
+
+/* FOR CARDS */
+
+.sm-card .sm-card-content .sm-card-info .cart-btn{
+    white-space: nowrap;
+}
