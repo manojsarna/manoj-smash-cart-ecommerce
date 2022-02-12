@@ -46,11 +46,13 @@
 .sm-action-icon-btn-wrapper .sm-icon-btn-primary:hover {
     color: var(--COLOR-HEADER-FONT-DARK-HOVER);
 }
+
+.icon-bd-top-right{
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
 /* HEADER ENDS */
 
 
-/* FOR CARDS */
-
-.sm-card .sm-card-content .sm-card-info .cart-btn{
-    white-space: nowrap;
-}

@@ -1,5 +1,5 @@
 @import "/lib/Components/core.css";
-
+@import "/lib/Components/utilities.css";
 html {
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
