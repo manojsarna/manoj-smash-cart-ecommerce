@@ -1,13 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmashCart - Home - Manoj Sarna</title>
-    <link rel="stylesheet"  href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/lib/assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Coming Soon...</h1>
+    <header class="sm-header">
+        <div class="sm-nav-new">
+            <!-- LOGO -->
+            <a href="/" class="link-text-dec" title="Go To Home">
+                <div id="sc-logo" class=" sm-nav-logo flex-row-wrap">
+                    <span class="sm-header-icon">
+                        <i class="fab fa-opencart"></i>
+                    </span>
+                    <span>SmashCart</span>
+                </div>
+            </a>
+
+            <!-- SEARCH -->
+            <div class="sm-nav-search">
+                <div class="sm-input-container input-search">
+                    <input type="text" class="input-basic input-basic-icon" placeholder="Search..." name="search" />
+                    <i class="icon-basic fas fa-search"></i>
+                </div>
+            </div>
+            <!-- ICONS BUTTONS FOR CTA -->
+            <div class="sm-action-icon-btn-wrapper">
+                <!-- Wishlist Icon -->
+                <button class="sm-icon-btn color-dm sm-icon-btn-primary sm-action-icon-wishlist">
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge bd-green icon-bd-top-right ">77</span>
+                    </div>
+                </button>
+
+                <!-- Cart Icon -->
+                <button class="sm-icon-btn color-dm sm-icon-btn-primary sm-action-icon-cart">
+                    <div class="icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge bd-green icon-bd-top-right ">77</span>
+                    </div>
+                </button>
+
+                <!-- DARK MODE BUTTON -->
+                <button id="btn-dm" class="btn-social btn-dark-mode ">
+                    <i class="fas fa-moon" title="Switch To Dark Mode"></i>
+                </button>
+
+                <!-- Login Button -->
+                <button id="sc-login" class="btn btn-primary ">
+                    <i class="fas fa-sign-in-alt icon-in-btn"></i>
+                    Login
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="sm-main">
+        <div class="sm-main-carousel">
+            <div class="sm-main-img-container">
+                <img id="sm-main-image" src="/lib/assets/images/sc-1.webp" alt="badminton" />
+            </div>
+            <div class="sm-main-carousel-btn sm-grid-content">
+                <h1 class="main-heading color-p">Badminton Deals</h1>
+                <h2 class="sub-main-heading color-p">Starting At ₹1299/-</h2>
+                <button id="carousel-btn" class="shop-now-hover btn btn-primary btn-bold">
+                    <i class="fab fa-opencart"></i>
+                    Shop Now
+                </button>
+            </div>
+
+        </div>
+
+        <div class="sm-main-categories">
+            <h2>Best Selling Categories</h2>
+            <div class="sm-main-cat-container">
+                <div class="sm-main-cat-child sm-box-shad-hov">
+                    <img src="/lib/assets/images/cat-11.jpg" alt="badminton">
+                    <div class="sm-man-cat-text sm-grid-content">
+                        <span>Rackets</span>
+                    </div>
+                </div>
+                <div class="sm-main-cat-child sm-box-shad-hov">
+                    <img src="/lib/assets/images/cat-2.jpg" alt="badminton">
+                    <div class="sm-man-cat-text sm-grid-content ">
+                        <span>KitBags</span>
+                    </div>
+                </div>
+                <div class="sm-main-cat-child sm-box-shad-hov">
+                    <img src="/lib/assets/images/cat-3.jpg" alt="badminton">
+                    <div class="sm-man-cat-text sm-grid-content">
+                        <span>Shoes</span>
+                    </div>
+                </div>
+                <div class="sm-main-cat-child sm-box-shad-hov">
+                    <img src="/lib/assets/images/cat-4.jpg" alt="badminton">
+                    <div class="sm-man-cat-text sm-grid-content">
+                        <span>Shuttles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sm-main-feature-p">
+            <h2 class="prod-heading">Best Selling Products</h2>
+            <div class="sm-main-prod-container">
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <span class="sm-card-badge">New</span>
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <button class="sm-card-dismiss" title="Dismiss">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <span class="sm-card-badge">Best seller</span>
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <span class="sm-card-badge">New</span>
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <button class="sm-card-dismiss" title="Dismiss">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-card">
+                    <div class="sm-card-img">
+                        <span class="sm-card-badge">Best seller</span>
+                        <button class="sm-card-fav" title="Add To Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <img src="/lib/assets/images/badminton/badminton-2.webp" alt="badminton" />
+                    </div>
+                    <div class="sm-card-content">
+                        <h2 class="sm-card-content-title" title="Click To Know More!!">Yonex GR 303 Aluminum Blend
+                            Badminton Racquets with Full Cover, Pack of 2 and Mavis combo</h2>
+                        <h2 class="sm-card-content-brand" title="Click To Know More!!"> by <a href="#"
+                                class="link-brand">Yonex</a></h2>
+                        <div class="sm-card-info">
+                            <span class="sm-card-info-price">
+                                ₹1249
+                                <span class="sm-card-info-price-old">₹1750</span>
+                                <span class="sm-card-info-price-save">(29% Off)</span>
+                            </span>
+                            <button class="btn btn-primary cart-btn">
+                                <i class="btn-cart fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="sm-footer">
+        <h4>Made with ❤️ by Manoj Sarna</h4>
+    </footer>
+    <script src="/lib/assets/lightdarktheme/lightdarkhome.js"></script>
+    <script src="index.js"></script>
+    <script src="/lib/Components/Header/header.js"></script>
 </body>
+
 </html>
