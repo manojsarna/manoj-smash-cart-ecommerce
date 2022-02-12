@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmashCart - Home - Manoj Sarna</title>
     <link rel="icon" type="image/x-icon" href="/lib/assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="/lib/Components/Header/header.css">
     <link rel="stylesheet" href="/lib/Components/Footer/footer.css">
-
 </head>
 
 <body>
@@ -67,54 +66,96 @@
     </header>
 
     <main class="sm-main">
-        <div class="sm-main-carousel">
-            <div class="sm-main-img-container">
-                <img id="sm-main-image" src="/lib/assets/images/sc-1.webp" alt="badminton" />
-            </div>
-            <div class="sm-main-carousel-btn sm-grid-content">
-                <h1 class="main-heading color-p">Badminton Deals</h1>
-                <h2 class="sub-main-heading color-p">Starting At ₹1299/-</h2>
-                <button id="carousel-btn" class="shop-now-hover btn btn-primary btn-bold" title="CheckOut Product Listings">
-                    <i class="fab fa-opencart"></i>
-                    Shop Now
-                </button>
-            </div>
+        <div class="sm-main-filter-container">
 
+          <div class="filter-title">
+              <span>FILTERS</span>
+              <a href="./products.html" class="btn-link-txt">CLEAR ALL</a>
+          </div>
+
+            <ul class="filter-list-container">
+              <div class="filter-list-header">Sort</div>
+              <li>
+                <label class="form-label flex-center">
+                  <input type="radio" name="sortByPriceLow" id="price-high-low">
+                  Price : High to Low
+                </label>
+              </li>
+              <li>
+                <label class="form-label flex-center">
+                  <input type="radio" name="sortByPriceHigh" id="price-low-high">
+                  Price : Low to High
+                </label>
+              </li>
+            </ul>
+            <ul class="filter-list-container">
+              <div class="filter-list-header">Rating</div>
+              <input class="rating-slider" type="range" min="1" max="5" value="2">
+              <label class=" form-label rating-slider-label">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </label>
+            </ul>
+            <ul class="filter-list-container">
+              <div class="filter-list-header">Categories</div>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="tee">
+                  Rackets
+                </label>
+              </li>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="hoodie">
+                  Kitbags
+                </label>
+              </li>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="sticker">
+                  Shoes
+                </label>
+              </li>
+              <li>
+                  <label class=" form-label flex-center">
+                    <input type="checkbox" name="" id="tee">
+                    Shuttles
+                  </label>
+                </li>                    
+            </ul>
+            <ul class="filter-list-container">
+              <div class="filter-list-header">Filter by Brands</div>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="sticker">
+                  Yonex
+                </label>
+              </li>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="tee">
+                  Lining
+                </label>
+              </li>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="sticker">
+                  Venom
+                </label>
+              </li>
+              <li>
+                <label class=" form-label flex-center">
+                  <input type="checkbox" name="" id="hoodie">
+                  Jonex
+                </label>
+              </li>
+            </ul>                  
         </div>
 
-        <div class="sm-main-categories">
-            <h2>Best Selling Categories</h2>
-            <div class="sm-main-cat-container">
-                <div class="sm-main-cat-child sm-box-shad-hov">
-                    <img src="/lib/assets/images/cat-11.jpg" alt="badminton">
-                    <div class="sm-man-cat-text sm-grid-content">
-                        <span>Rackets</span>
-                    </div>
-                </div>
-                <div class="sm-main-cat-child sm-box-shad-hov">
-                    <img src="/lib/assets/images/cat-2.jpg" alt="badminton">
-                    <div class="sm-man-cat-text sm-grid-content ">
-                        <span>KitBags</span>
-                    </div>
-                </div>
-                <div class="sm-main-cat-child sm-box-shad-hov">
-                    <img src="/lib/assets/images/cat-3.jpg" alt="badminton">
-                    <div class="sm-man-cat-text sm-grid-content">
-                        <span>Shoes</span>
-                    </div>
-                </div>
-                <div class="sm-main-cat-child sm-box-shad-hov">
-                    <img src="/lib/assets/images/cat-4.jpg" alt="badminton">
-                    <div class="sm-man-cat-text sm-grid-content">
-                        <span>Shuttles</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sm-main-feature-p">
-            <h2 class="prod-heading">Best Selling Products</h2>
-            <div class="sm-main-prod-container">
+        <div class="sm-main-prod-container">
 
                 <div class="sm-card">
                     <div class="sm-card-img">
@@ -326,17 +367,18 @@
                     </div>
                 </div>
                 
-            </div>
+
         </div>
 
-    </main>
+  </main>
 
     <footer class="sm-footer">
         <h4>Made with ❤️ by Manoj Sarna</h4>
     </footer>
     <script src="/lib/assets/lightdarktheme/lightdarkhome.js"></script>
-    <script src="index.js"></script>
+    <script src="/lib/Components/Auth/auth.js"></script>
     <script src="/lib/Components/Header/header.js"></script>
+
 </body>
 
 </html>

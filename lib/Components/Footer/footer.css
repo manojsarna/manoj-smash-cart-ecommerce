@@ -1,0 +1,11 @@
+/* FOOTER STARTS */
+
+.sm-footer{
+    grid-area: footer;
+    display: grid;
+    place-content: center;
+    border-top: 2px solid var(--COLOR-HEADER-FONT-DARK);
+    transition: color ease-in 0.2s
+}
+
+/* FOOTER ENDS */
