@@ -85,7 +85,7 @@ body {
 
 #carousel-btn {
     white-space: nowrap;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     font-size: 2.3rem;
     width: 20rem;
     font-weight: 500;
