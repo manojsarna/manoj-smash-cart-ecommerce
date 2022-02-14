@@ -85,7 +85,7 @@ body {
 
 #carousel-btn {
     white-space: nowrap;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     font-size: 2.3rem;
     width: 20rem;
     font-weight: 500;
@@ -158,13 +158,13 @@ body {
     text-shadow: 0px 5px 5px var(--COLOR-BLACK);
     border-radius: 10px;
     font-weight: 700;
-    background: var(--COLOR-BLACK-70);
+    background: var(--COLOR-BLACK-40);
     transition: all ease-in 0.3s;
 }
 
 .sm-man-cat-text:hover {
     color: var(--COLOR-LIGHTEN-2);
-    background: var(--COLOR-BLACK-30);
+    background: var(--COLOR-BLACK-10);
 }
 
 .sm-main-categories h2 {

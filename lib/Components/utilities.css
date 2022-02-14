@@ -5,5 +5,10 @@
 }
 
 .sm-card{
-    width: 25rem;
+    width: 24rem;
+}
+
+.icon-bd-top-right {
+    font-size: 1.6rem;
+    font-weight: 600;
 }

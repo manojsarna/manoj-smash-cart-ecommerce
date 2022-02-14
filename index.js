@@ -6,3 +6,10 @@ setInterval(()=>{
     imgEl.src=`/lib/assets/images/sc-${i}.webp`;
     i+=1;
 },5000)
+
+
+const heroShopBtn = document.getElementById("carousel-btn");
+
+heroShopBtn.addEventListener("click", () => {
+  window.location = "/lib/components/products/products.html";
+});
