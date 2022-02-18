@@ -1,32 +1,10 @@
 @import "/lib/Components/core.css";
 @import "/lib/Components/utilities.css";
-
+@import "/lib/Components/Header/header.css";
+@import "/lib/Components/Footer/footer.css";
 
 :root{
     --COLOR-RED-60: rgb(255,0,0,0.6);  
-}
-
-html {
-    scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    min-height: 100vh;
-    min-width: 100vh;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--COLOR-FONT);
-    background: var(--COLOR-BG);
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 7rem 1fr 7rem;
-    margin: auto;
-    
 }
 
 /* MAIN STARTS */
@@ -53,13 +31,12 @@ body {
 
 .sm-cart-products-list .sm-card .sm-card-img{
     background: var(--COLOR-WHITE-ALWAYS);
-    padding: 2rem;
+    padding: 3rem;
 }
 
-
 .sm-cart-products-list .sm-card .sm-card-content{
-    padding: 5px;
-    padding-left: 1rem;
+    padding: 1rem;
+    
 }
 
 .sm-cart-products-list .sm-card .sm-card-content .sm-card-content-desc{
@@ -70,7 +47,7 @@ body {
 .sm-card-cart-qty-container{
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap:2rem;
 }
 
 .sm-cart-qty{
@@ -141,7 +118,7 @@ body {
 .sm-cart-checkout-details{
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-weight: 500;
     font-size: 2rem;
 }
@@ -156,15 +133,41 @@ body {
 .btn-place-order{
     font-size: 2rem;
 }
+
+.mt-5{
+    margin-top: 1rem;
+}
+.mr-10{
+    margin-right: 1rem;
+}
 /* MAIN ENDS */
 
 /* MEDIA QUERIES */
-@media only screen and (max-width:800px){
-    :root{
-        font-size:50%;
-    }
-    .sm-nav-search{
-        display: none;
-    }
-}
 
+@media only screen and (max-width:768px){
+
+    .sm-main-cart{
+        grid-area: main;
+        min-width: 100%;
+        height: 100%;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:3rem;
+    }
+    
+    .sm-cart-checkout-container {
+        min-width: 80%;
+    }
+    
+    .sm-cart-products-list{
+        min-width: 70%;
+    }
+
+    .sm-cart-products-list{
+        justify-content: center;
+    }
+    
+}

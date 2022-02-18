@@ -1,16 +1,18 @@
 /* HEADER STARTS */
 
 .sm-header{
-
-    display:flex;
     grid-area: header;
     padding: 0 1rem;
-    border-bottom: 2px solid var(--COLOR-HEADER-FONT-DARK);
-    position: sticky;
+    position: fixed;
     z-index:2;
     width: 100%;
     top:0;
-    background: var(--COLOR-BG);
+    background: var(--COLOR-BG); 
+    border-bottom: 2px solid var(--COLOR-HEADER-FONT-DARK);
+}
+
+.sm-nav-new{
+    padding:1rem;
 }
 
 #sc-login{
@@ -48,11 +50,32 @@
 }
 
 .icon-bd-top-right{
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.2rem;
 
 }
 
 /* HEADER ENDS */
 
-
+/* MEDIA QUERIES FOR HEADERS*/
+@media only screen and (max-width:768px){
+    :root{
+        font-size:45%;
+    }
+    .sm-nav-search{
+        display: none;
+    }
+    .sm-header{
+        padding: 1rem 5px;
+    }
+    .sm-nav-new{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    .sm-action-icon-btn-wrapper{
+        gap:2px;
+    }
+    .link-text-dec {
+        margin-right: 5px;
+    }
+}

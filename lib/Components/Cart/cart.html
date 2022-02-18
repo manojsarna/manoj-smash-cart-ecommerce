@@ -8,14 +8,12 @@
     <title>SmashCart - Home - Manoj Sarna</title>
     <link rel="icon" type="image/x-icon" href="/lib/assets/favicon/favicon.ico">
     <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="/lib/Components/Header/header.css">
-    <link rel="stylesheet" href="/lib/Components/Footer/footer.css">
 
 </head>
 
 <body>
     <header class="sm-header">
-        <div class="sm-nav-new">
+        <nav class="sm-nav-new">
             <!-- LOGO -->
             <a href="/" class="link-text-dec" title="Go To Home">
                 <div id="sc-logo" class=" sm-nav-logo flex-row-wrap">
@@ -64,7 +62,7 @@
                 </button>
 
             </div>
-        </div>
+        </nav>
     </header>
 
     <main class="sm-main-cart">
@@ -274,8 +272,8 @@
             <div class="sm-cart-checkout-details sm-cart-total">
               Total :<span class="sm-cart-checkout-amt">₹10490.00</span>
             </div>
-            <button  class="btn btn-primary btn-nowrap btn-place-order">
-                <i class="fas fa-truck"></i>
+            <button  class="btn btn-primary btn-nowrap btn-place-order mt-5">
+                <i class="fas fa-shopping-bag mr-10"></i>
                 Place Order
             </button>
         </div>        
@@ -284,8 +282,13 @@
     </main>
 
     <footer class="sm-footer">
-        <h4>Made with ❤️ by Manoj Sarna</h4>
+        <h5>Made with ❤️ by <strong>Manoj Sarna</strong></h5>
+        <div class="sm-footer-social">
+            <a href="https://twitter.com/manojsarnacom" target="_blank" rel="noopener noreferrer" class="btn-social-show" title="Twitter"><i class="btn-social fab fa-twitter"></i></a>
+            <a href="https://github.com/manojsarna" target="_blank" rel="noopener noreferrer" class="btn-social-show" title="GitHub"><i class="btn-social fab fa-github"></i></a>
+        </div>
     </footer>
+    
     <script src="/lib/assets/lightdarktheme/lightdarkhome.js"></script>
     <script src="/lib/Components/Header/header.js"></script>
     <script src="/lib/Components/cards.js"></script>
