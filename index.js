@@ -7,7 +7,6 @@ setInterval(()=>{
     i+=1;
 },5000)
 
-
 const heroShopBtn = document.getElementById("carousel-btn");
 
 heroShopBtn.addEventListener("click", () => {

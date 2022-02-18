@@ -8,8 +8,6 @@
     <title>SmashCart - Home - Manoj Sarna</title>
     <link rel="icon" type="image/x-icon" href="/lib/assets/favicon/favicon.ico">
     <link rel="stylesheet" href="auth.css">
-    <link rel="stylesheet" href="/lib/Components/Header/header.css">
-    <link rel="stylesheet" href="/lib/Components/Footer/footer.css">
 </head>
 
 <body>
@@ -39,7 +37,7 @@
                 <button id="cart-btn-header" class="sm-icon-btn color-dm sm-icon-btn-primary sm-action-icon-wishlist">
                     <div class="icon">
                         <i class="fas fa-shopping-cart"></i>
-                        <span class="icon-badge bd-red icon-bd-top-right ">9</span>
+                        <span class="icon-badge bd-red icon-bd-top-right ">0</span>
                     </div>
                 </button>
 
@@ -47,7 +45,7 @@
                 <button id="wishlist-btn-header" class="sm-icon-btn color-dm sm-icon-btn-primary sm-action-icon-cart">
                     <div class="icon">
                         <i class="fas fa-heart"></i>
-                        <span class="icon-badge bd-red icon-bd-top-right ">6</span>
+                        <span class="icon-badge bd-red icon-bd-top-right ">0</span>
                     </div>
                 </button>
 
@@ -76,10 +74,10 @@
             <div class="auth-email-pass">
                 <div class="sm-input-container input-user">
                     <input type="email" class="input-basic input-basic-icon" placeholder="Enter Email" name="user" />
-                    <i class="icon-basic fas fa-user"></i>
+                    <i class="icon-basic fas fa-envelope"></i>
                 </div>
                 <div class="sm-input-container input-pass">
-                    <input type="password" class="input-basic input-basic-icon" placeholder="Password..."
+                    <input type="password" class="input-basic input-basic-icon" placeholder="Enter Password"
                         name="password" />
                     <i class="icon-basic fas fa-key"></i>
                 </div>
@@ -108,10 +106,10 @@
             <div class="auth-email-pass">
                 <div class="sm-input-container input-user">
                     <input type="email" class="input-basic input-basic-icon" placeholder="Enter Email" name="user" />
-                    <i class="icon-basic fas fa-user"></i>
+                    <i class="icon-basic fas fa-envelope"></i>
                 </div>
                 <div class="sm-input-container input-pass">
-                    <input type="password" class="input-basic input-basic-icon" placeholder="Password..."
+                    <input type="password" class="input-basic input-basic-icon" placeholder="Enter Password"
                         name="password" />
                     <i class="icon-basic fas fa-key"></i>
                 </div>
@@ -133,8 +131,13 @@
     </main>
 
     <footer class="sm-footer">
-        <h4>Made with ❤️ by Manoj Sarna</h4>
+        <h5>Made with ❤️ by <strong>Manoj Sarna</strong></h5>
+        <div class="sm-footer-social">
+            <a href="https://twitter.com/manojsarnacom" target="_blank" rel="noopener noreferrer" class="btn-social-show" title="Twitter"><i class="btn-social fab fa-twitter"></i></a>
+            <a href="https://github.com/manojsarna" target="_blank" rel="noopener noreferrer" class="btn-social-show" title="GitHub"><i class="btn-social fab fa-github"></i></a>
+        </div>
     </footer>
+
     <script src="/lib/assets/lightdarktheme/lightdarkhome.js"></script>
     <script src="/lib/Components/Auth/auth.js"></script>
     <script src="/lib/Components/Header/header.js"></script>

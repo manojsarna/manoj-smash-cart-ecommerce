@@ -2,10 +2,26 @@
 
 .sm-footer{
     grid-area: footer;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
     border-top: 2px solid var(--COLOR-HEADER-FONT-DARK);
     transition: color ease-in 0.2s
+}
+
+
+.sm-footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.sm-footer-social .btn-social{
+    font-size: 3rem;
 }
 
 /* FOOTER ENDS */
