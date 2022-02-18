@@ -71,6 +71,11 @@
 
 }
 
+.shop-now-hover .fa-opencart{
+    margin-right: 5px;
+
+}
+
 #carousel-btn:hover {
     opacity: 1;
 }

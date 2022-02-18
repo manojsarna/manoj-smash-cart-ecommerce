@@ -100,6 +100,14 @@
     background: var(--COLOR-WHITE-ALWAYS);
     padding: 4rem;
 }
+
+input[type="radio"],input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.rating-slider{
+    cursor: pointer;
+}
 /* MAIN ENDS */
 
 /* MEDIA QUERIES */
