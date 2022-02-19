@@ -91,7 +91,7 @@
 }
 
 .qty-btn-red:hover {
-    background: rgba(var(--COLOR-RED-1),0.8);
+    background: rgb(var(--COLOR-RED-1),0.8);
 }
 
 .qty-btn-red:active {

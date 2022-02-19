@@ -3,14 +3,12 @@
 .sm-footer{
     grid-area: footer;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    padding: 0 5rem;
     border-top: 2px solid var(--COLOR-HEADER-FONT-DARK);
     transition: color ease-in 0.2s
 }
-
 
 .sm-footer-social {
     display: flex;
