@@ -161,10 +161,15 @@
     top: 7rem;
     right: 1rem;
     background: var(--COLOR-BG);
+    box-shadow: 0 0 4px 0 var(--COLOR-BS-GREY);
 }
 
 .user-show-dropdown-hide {
     display: none;
+}
+
+.btn-logged-in-user:hover + .user-show-dropdown-hide{
+    display: flex;
 }
 
 /* MAIN ENDS */
