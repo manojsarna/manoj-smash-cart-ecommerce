@@ -4,7 +4,7 @@
 @import "/lib/Components/Footer/footer.css";
 
 :root {
-    --COLOR-RED-60: rgb(255, 0, 0, 0.6);
+    --COLOR-RED-1: 255, 0, 0;
 }
 
 /* MAIN STARTS */
@@ -82,7 +82,7 @@
 
 .qty-btn-red {
     color: var(--COLOR-FONT);
-    background: var(--COLOR-RED-60);
+    background: rgb(var(--COLOR-RED-1),0.3);
     border: 2px solid var(--COLOR-RED);
     border-radius: 5px;
     padding: 5px 10px;
@@ -91,7 +91,7 @@
 }
 
 .qty-btn-red:hover {
-    background: var(--COLOR-RED);
+    background: rgba(var(--COLOR-RED-1),0.8);
 }
 
 .qty-btn-red:active {
@@ -169,6 +169,10 @@
 }
 
 .btn-logged-in-user:hover + .user-show-dropdown-hide{
+    display: flex;
+}
+
+.user-show-dropdown-hide:hover{
     display: flex;
 }
 
