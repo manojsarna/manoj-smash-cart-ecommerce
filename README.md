@@ -21,6 +21,9 @@ Smash Cart - Ecommerce App using [Smash UI](https://smashui.netlify.app/)
 ## Live Demo: [SmashCart](https://smashcart.netlify.app/)
 
 ---
+## Video Demo:
+https://user-images.githubusercontent.com/79917843/154931357-1229388a-4cff-4951-bdfa-e77bbd6f1e36.mp4
+---
 
 ## Quick Start
 
