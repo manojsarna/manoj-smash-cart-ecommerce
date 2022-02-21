@@ -40,6 +40,10 @@ To start using the SmashCart you can visit the following link :
 - [Search](https://smashcart.netlify.app/)
 - [Checkout](https://smashcart.netlify.app/lib/components/cart/cart.html)
 
+### Features Added
+
+- Responsive Site (Both desktop and mobile responsive)
+- Persisting Dark / Light Mode 
 
 ---
 ### My Inspiration For The Project
