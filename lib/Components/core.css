@@ -47,6 +47,7 @@
     --COLOR-BLACK-30: rgba(0, 0, 0, 0.3);
     --COLOR-BLACK-20: rgba(0, 0, 0, 0.2);
     --COLOR-BLACK-10: rgba(0, 0, 0, 0.1);
+    --COLOR-RED-1: 255, 0, 0;
 
     /* COLOR PALETTE LIGHTEN 10% */
 
@@ -198,10 +199,6 @@ picture {
     width: 5px;
     height: 5px;
 }
-
-/* ::-webkit-scrollbar-track {
-    background-color: var(--COLOR-SCROLL);
-    } */
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--COLOR-PRIMARY);

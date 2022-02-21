@@ -3,10 +3,6 @@
 @import "/lib/Components/Header/header.css";
 @import "/lib/Components/Footer/footer.css";
 
-:root {
-    --COLOR-RED-1: 255, 0, 0;
-}
-
 /* MAIN STARTS */
 .sm-main-cart {
     grid-area: main;
