@@ -22,7 +22,7 @@ Smash Cart - Ecommerce App using [Smash UI](https://smashui.netlify.app/)
 
 ---
 ## Video Demo:
-https://user-images.githubusercontent.com/79917843/154931357-1229388a-4cff-4951-bdfa-e77bbd6f1e36.mp4
+https://user-images.githubusercontent.com/45617406/155204090-6cbff727-9a03-4dce-9550-27d3c0125955.mp4
 
 ---
 
